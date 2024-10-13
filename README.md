@@ -53,7 +53,7 @@ I started by creating a table for each month of data by uploading its correspond
 Here I encountered my first problem - BigQuery only allows files <100MB to be uploaded.
 Unfortunately, the datasets from May through October were all larger than 100MB. This was interesting to note early on as I already started to think there could be a correlation between warm weather and number of rides. 
 
-I resolved this by writing a short python code that splits each file into two separate files.
+I resolved this by writing a short python code called [split.py](https://github.com/kiankaas/bike-share-analysis/blob/main/split.py) that splits each file into two separate files.
 
 **Data Combining**:
 SQL Query: link 
