@@ -101,7 +101,7 @@ With these changes, our data is clean and ready to analyze. The final cleaned da
 ## Analyze:
 SQL Query: [Data Analysis](https://github.com/kiankaas/bike-share-analysis/blob/main/04-data_analysis.sql)
 
-Analysis question: How do annual members and casual riders use Cyclistic bikes differently?  
+**Analysis question**: How do annual members and casual riders use Cyclistic bikes differently?  
 
 ### Total Rides in 2023:
 
