@@ -105,7 +105,7 @@ Analysis question: How do annual members and casual riders use Cyclistic bikes d
 
 ### Total Rides in 2023:
 
-![Screen Shot 2024-10-10 at 7 41 44 PM](https://github.com/user-attachments/assets/176cdcf0-9586-4217-8a3e-cb0afb80e191)
+![Total_Rides_2023](https://github.com/user-attachments/assets/768783cb-37cc-400c-9177-bdc527703cb8)
 
 - Annual members made nearly twice as many rides in 2023 as casual riders did.
 - Annual members made a total of 3,479,468 rides, accounting for 64% of the total rides.
@@ -114,7 +114,7 @@ Analysis question: How do annual members and casual riders use Cyclistic bikes d
 
 ### Types of Bikes:
 
-![Screen Shot 2024-10-10 at 5 40 13 PM](https://github.com/user-attachments/assets/e9d4b5bf-425c-4a96-a2c7-3c65b77f8a49)
+![Total_Rides_Bike_types](https://github.com/user-attachments/assets/dd152e61-00a7-4685-bdb1-4546adc2e9e2)
 
 - Annual members have an equal preference towards electric and classic bikes.
 - Casual riders slightly prefer electric bikes over classic bikes.
@@ -123,7 +123,7 @@ Analysis question: How do annual members and casual riders use Cyclistic bikes d
 
 ### Total Rides per Month:
 
-![Screen Shot 2024-10-10 at 5 52 23 PM](https://github.com/user-attachments/assets/0b66856f-fabc-4697-93b8-820e9cad1113)
+![Total_rides_month](https://github.com/user-attachments/assets/94c33c5e-8f67-4946-abfc-24be88e33ce7)
 
 - Both casual riders and annual members exhibit a similar seasonal trend, forming a bell curve over the year.
 - Ride activity steadily rises through the spring and peaks in August, before dropping quickly as the colder months approach.
@@ -131,7 +131,7 @@ Analysis question: How do annual members and casual riders use Cyclistic bikes d
 
 ### Total Rides per Day of Week:
 
-![Screen Shot 2024-10-10 at 5 56 51 PM](https://github.com/user-attachments/assets/267a682f-b852-42bf-af78-db8c892e3857)
+![Total_rides_DayOfWeek](https://github.com/user-attachments/assets/17ac1815-45f3-46b5-8a66-6a3169172ad0)
 
 - Casual riders and annual members exhibit nearly opposite trends in their usage patterns throughout the week.
 - Annual members take more rides during weekdays, where casual riders take more trips during weekends. 
@@ -139,7 +139,7 @@ Analysis question: How do annual members and casual riders use Cyclistic bikes d
 
 ### Total Rides per Hour:
 
-![Screen Shot 2024-10-10 at 5 59 36 PM](https://github.com/user-attachments/assets/89a5bef0-1b65-4634-9140-144991de165c)
+![Total_rides_hour](https://github.com/user-attachments/assets/d3d08844-985d-488f-8739-6233c7c2fd97)
 
 - Annual members have distinct peaks during rush hours, with a significant increase at 8am and another at 5pm, reflecting commuting patterns.
 - Casual riders show a relatively smooth rise in activity starting around 6am and peaking around 6pm, before declining.
@@ -147,14 +147,14 @@ Analysis question: How do annual members and casual riders use Cyclistic bikes d
 
 ### Average Rider Duration in Minutes per Member Type:
 
-![Screen Shot 2024-10-10 at 6 03 41 PM](https://github.com/user-attachments/assets/fdab11d0-f856-4733-810e-a3bb1e438ce4)
+![avg_duration](https://github.com/user-attachments/assets/49d8fcc6-a0a7-4705-9361-88fb92d74add)
 
 - On average, casual riders take much longer rides than annual members, at nearly twice the average time.
 
 
 ### Average Ride Duration per Month:
 
-![Screen Shot 2024-10-10 at 6 04 25 PM](https://github.com/user-attachments/assets/4beacab3-4cef-4414-8e5d-190d252ab04e)
+![avg_duration_month](https://github.com/user-attachments/assets/6d05329b-2197-494f-ac73-ef210e454777)
 
 - Annual members maintain a consistent average ride duration, hovering around 10-13 minutes throughout the year, and peaking in the summertime.
 - Casual riders have longer average ride durations throughout the whole year, peaking in July steadily decreasing in the following months.
@@ -163,7 +163,7 @@ Analysis question: How do annual members and casual riders use Cyclistic bikes d
 
 ### Average Ride Duration per Day of Week: 
 
-![Screen Shot 2024-10-10 at 6 10 44 PM](https://github.com/user-attachments/assets/1fb1d145-1b6d-4b9c-98af-9c82b1d73a70)
+![avg_duration_DayOfWeek](https://github.com/user-attachments/assets/974fd7b1-57be-4c81-b3d9-aa4c728cebb4)
 
 - Both casual riders and annual members follow a similar trend, taking their longest trips on average on the weekends.
 
