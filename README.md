@@ -58,10 +58,13 @@ Unfortunately, the datasets from May through October were all larger than 100MB.
 I resolved this by writing a short python code called [split.py](https://github.com/kiankaas/bike-share-analysis/blob/main/split.py) that splits each file into two separate files.
 
 **Data Combination**:
+
 SQL Query: [Combining Tables](https://github.com/kiankaas/bike-share-analysis/blob/main/01-Combine_tables.sql) 
+
 Once I uploaded and created a table for each of the files, I combined them into one big dataset using SQL. The dataset contains data regarding each ride in 2023, consisting of **5,719,877 records**. 
 
 **Data Exploration**: 
+
 SQL Query: [Data Exploration](https://github.com/kiankaas/bike-share-analysis/blob/main/02-data_exploration.sql)
 
 Next, I familiarize myself with the dataset so I can uncover any errors, inconsistencies, outliers, or missing values. After running some queries, I observed the following:
