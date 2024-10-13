@@ -71,16 +71,16 @@ Next, I familiarize myself with the dataset so I can uncover any errors, inconsi
 
 1. All data types are correct and don’t need to be cleaned. 
 2. There are **no duplicate rows** in the dataset.
-3. All ride_id (primary key) values are 16 characters long. 
-4. member_casual column has 2 unique values:
+3. All **ride_id** (primary key) values are 16 characters long. 
+4. **member_casual** column has 2 unique values:
 
 ![member types](https://github.com/user-attachments/assets/5d5c7741-46a7-46b4-b5da-0868bc1bda8f)
 
-5. rideable_type column has 3 unique values: electric, classic, and docked bike
+5. **rideable_type** column has 3 unique values: electric, classic, and docked bike
 
 ![bike types](https://github.com/user-attachments/assets/6cd017cf-f0ea-40a9-8fec-1ac513e3475b)
 
-6. The table below shows the number of NULL values in each column:
+6. The table below shows the number of **NULL values** in each column:
 
 ![null per column](https://github.com/user-attachments/assets/75c5310d-7255-4298-961e-d837c2d5bab5)
 
