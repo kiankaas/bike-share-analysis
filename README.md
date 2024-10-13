@@ -74,15 +74,15 @@ Next, I familiarize myself with the dataset so I can uncover any errors, inconsi
 3. All ride_id (primary key) values are 16 characters long. 
 4. member_casual column has 2 unique values:
 
-  ![Screen Shot 2024-10-11 at 5 56 43 PM](https://github.com/user-attachments/assets/2a62c941-e7b3-4270-8968-161246b7624a)
+![member types](https://github.com/user-attachments/assets/5d5c7741-46a7-46b4-b5da-0868bc1bda8f)
 
 5. rideable_type column has 3 unique values: electric, classic, and docked bike
 
-  ![Screen Shot 2024-10-12 at 3 13 18 PM](https://github.com/user-attachments/assets/fc30cfd3-5e7d-48d9-9445-7ffef3f12e23)
+![bike types](https://github.com/user-attachments/assets/6cd017cf-f0ea-40a9-8fec-1ac513e3475b)
 
 6. The table below shows the number of NULL values in each column:
 
-  ![Screen Shot 2024-10-12 at 3 14 02 PM](https://github.com/user-attachments/assets/fbea6067-e482-469c-a366-21141f4579bc)
+![null per column](https://github.com/user-attachments/assets/75c5310d-7255-4298-961e-d837c2d5bab5)
 
 7. There are **1,388,170 rows** that contain at least one null entry.
 8. **156,032 rows** contain outliers, which I determined by having a ride duration < 1 minute or > 24 hours long.
@@ -170,7 +170,7 @@ SQL Query: [Data Analysis](https://github.com/kiankaas/bike-share-analysis/blob/
 ## Step 5. Share:
 Tableau Dashboard: [Cyclistic Bike-Share Case Study](https://public.tableau.com/app/profile/kian.kaas/viz/CyclisticBike-ShareCaseStudy_17283420976820/CyclisticDashboard)
 
-![Dashboard]([https://github.com/user-attachments/assets/96f564d8-5704-424d-8b2c-f4332171f6fd](https://github.com/kiankaas/bike-share-analysis/blob/main/Tableau%20Screenshots/Dashboard.png))
+![Dashboard](https://github.com/user-attachments/assets/bd8f02bc-61a4-4274-8ba3-2bd46239e5bb)
 
 **Similarities**:
 - Both annual members and casual riders exhibit a similar seasonal trend, with ride activity rising through the spring, peaking in August, and declining in the colder months.
