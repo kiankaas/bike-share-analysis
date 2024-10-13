@@ -178,13 +178,13 @@ Tableau Dashboard: [Cyclistic Bike-Share Case Study](https://public.tableau.com/
 - Both annual members and casual riders make extensive use of electric and classic bikes.
 
 **Differences**:
-- Annual members account for 64% of all rides in 2023, taking significantly more trips than casual riders.
-- Annual members split their usage evenly between electric and classic bikes, while casual riders favor electric bikes and are the only group to use docked bikes.
-- Annual members are most active on weekdays, especially during rush hours at 8am and 5pm, reflecting a commuter pattern.
-- Casual riders are more active on weekends, with a steady rise in activity that peaks around 6pm.
-- Casual riders take longer rides, averaging nearly twice the duration of annual members.
-- Annual members maintain a steady ride duration year-round, suggesting commuter-focused trips.
-- Casual riders have much longer average ride times, especially during the summer, suggesting leisure-based trips.
+- **Annual members** account for **64%** of all rides in 2023, taking significantly more trips than **casual riders**.
+- **Annual members** split their usage **evenly** between electric and classic bikes, while **casual riders** favor electric bikes and are the only group to use docked bikes.
+- **Annual members** are most active on **weekdays**, especially during rush hours at **8am** and **5pm**, reflecting a commuter pattern.
+- **Casual riders** are more active on **weekends**, with a steady rise in activity that peaks around **6pm**.
+- **Casual riders** take longer rides, averaging nearly **twice the duration** of **annual members**.
+- **Annual members** maintain a **steady ride duration** year-round, suggesting commuter-focused trips.
+- **Casual riders** have much **longer average ride duration**, especially during the summer, suggesting leisure-based trips.
 
 ## Step 6. Act:
 
