@@ -13,12 +13,12 @@ Cyclistic currently offers the following pricing plans: single-ride passes, full
 
 The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Thus, Cyclistic has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members.	
 
-## Ask:
+## Step 1. Ask:
 **Business task**: Design marketing strategies to convert casual riders into annual members. 
 
 My job is to **analyze how annual members and casual riders use Cyclistic bikes differently**.
 
-## Prepare:
+## Step 2. Prepare:
 **Data source**: 
 I will use Cyclistic’s historical trip data to analyze and identify trends from January 2023 to December 2023, which I have downloaded onto my computer from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)’s AWS server. The data has been made available by Motivate International Inc. under [this license](https://divvybikes.com/data-license-agreement). 
 
@@ -42,7 +42,7 @@ The trip data is stored in a CSV file, with a single file for each month. Each f
 | end_lng      | float      | Longitude of the ending station            | 
 | member_casual      | string      | Membership type of rider (member or casual)            | 
 
-## Process:
+## Step 3. Process:
 The tools I will use are:
 - **Google BigQuery**: Used for querying and processing the dataset.
 - **SQL**: For performing data transformations and analysis.
@@ -98,7 +98,7 @@ Using the **started_at** and **ended_at** columns, in YYYY-MM-DD HH:mm:ss UTC fo
 
 With these changes, our data is clean and ready to analyze. The final cleaned dataset has **5,450,166 rows** and **8 columns**.
 
-## Analyze:
+## Step 4. Analyze:
 SQL Query: [Data Analysis](https://github.com/kiankaas/bike-share-analysis/blob/main/04-data_analysis.sql)
 
 **Analysis question**: How do annual members and casual riders use Cyclistic bikes differently?  
@@ -167,7 +167,7 @@ SQL Query: [Data Analysis](https://github.com/kiankaas/bike-share-analysis/blob/
 
 - Both casual riders and annual members follow a similar trend, taking their longest trips on average on the weekends.
 
-## Share:
+## Step 5. Share:
 Tableau Dashboard: [Cyclistic Bike-Share Case Study](https://public.tableau.com/app/profile/kian.kaas/viz/CyclisticBike-ShareCaseStudy_17283420976820/CyclisticDashboard)
 
 ![Dashboard]([https://github.com/user-attachments/assets/96f564d8-5704-424d-8b2c-f4332171f6fd](https://github.com/kiankaas/bike-share-analysis/blob/main/Tableau%20Screenshots/Dashboard.png))
@@ -186,7 +186,7 @@ Tableau Dashboard: [Cyclistic Bike-Share Case Study](https://public.tableau.com/
 - Annual members maintain a steady ride duration year-round, suggesting commuter-focused trips.
 - Casual riders have much longer average ride times, especially during the summer, suggesting leisure-based trips.
 
-## Act:
+## Step 6. Act:
 
 From my analysis, Cyclistic can design marketing strategies to convert casual riders to annual members. Here are my recommendations:
 
