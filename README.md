@@ -57,13 +57,13 @@ Unfortunately, the datasets from May through October were all larger than 100MB.
 
 I resolved this by writing a short python code called [split.py](https://github.com/kiankaas/bike-share-analysis/blob/main/split.py) that splits each file into two separate files.
 
-**Data Combination**:
+### Data Combination:
 
 SQL Query: [Combining Tables](https://github.com/kiankaas/bike-share-analysis/blob/main/01-Combine_tables.sql) 
 
 Once I uploaded and created a table for each of the files, I combined them into one big dataset using SQL. The dataset contains data regarding each ride in 2023, consisting of **5,719,877 records**. 
 
-**Data Exploration**: 
+### Data Exploration: 
 
 SQL Query: [Data Exploration](https://github.com/kiankaas/bike-share-analysis/blob/main/02-data_exploration.sql)
 
@@ -87,7 +87,7 @@ Next, I familiarize myself with the dataset so I can uncover any errors, inconsi
 7. There are **1,388,170 rows** that contain at least one null entry.
 8. **156,032 rows** contain outliers, which I determined by having a ride duration < 1 minute or > 24 hours long.
 
-**Data Cleaning and Transformation**:
+### Data Cleaning and Transformation:
 SQL Query: [Data Cleaning](https://github.com/kiankaas/bike-share-analysis/blob/main/03-data_cleaning.sql)
 
 As **1,388,170 rows** contained at least one NULL value, simply deleting all these rows from the dataset would reduce our total available data by **~24%**, which could significantly affect our results. As the other columns contain valuable data that can be used for analysis, such as **rideable_type** and **member_casual**, I decided to keep these rows and treat the null entries as N/A rather than deleting them. 
@@ -170,7 +170,7 @@ Analysis question: How do annual members and casual riders use Cyclistic bikes d
 ## Share:
 Tableau Dashboard: [Cyclistic Bike-Share Case Study](https://public.tableau.com/app/profile/kian.kaas/viz/CyclisticBike-ShareCaseStudy_17283420976820/CyclisticDashboard)
 
-![Screen Shot 2024-10-11 at 2 31 09 PM](https://github.com/user-attachments/assets/96f564d8-5704-424d-8b2c-f4332171f6fd)
+![Dashboard]([https://github.com/user-attachments/assets/96f564d8-5704-424d-8b2c-f4332171f6fd](https://github.com/kiankaas/bike-share-analysis/blob/main/Tableau%20Screenshots/Dashboard.png))
 
 **Similarities**:
 - Both annual members and casual riders exhibit a similar seasonal trend, with ride activity rising through the spring, peaking in August, and declining in the colder months.
