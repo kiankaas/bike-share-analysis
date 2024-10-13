@@ -16,11 +16,13 @@ The director of marketing believes the company’s future success depends on max
 ## Ask:
 **Business task**: Design marketing strategies to convert casual riders into annual members. 
 
-My job is to analyze how annual members and casual riders use Cyclistic bikes differently.
+My job is to **analyze how annual members and casual riders use Cyclistic bikes differently**.
 
 ## Prepare:
 **Data source**: 
 I will use Cyclistic’s historical trip data to analyze and identify trends from January 2023 to December 2023, which I have downloaded onto my computer from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)’s AWS server. The data has been made available by Motivate International Inc. under [this license](https://divvybikes.com/data-license-agreement). 
+
+**Note**: Unfortunately GitHub does not support files larger than 100MB, so I was unable to include the datasets in this repository. 
 
 **Data Organization**:
 The trip data is stored in a CSV file, with a single file for each month. Each file contains 13 columns, as shown below: 
@@ -55,12 +57,12 @@ Unfortunately, the datasets from May through October were all larger than 100MB.
 
 I resolved this by writing a short python code called [split.py](https://github.com/kiankaas/bike-share-analysis/blob/main/split.py) that splits each file into two separate files.
 
-**Data Combining**:
-SQL Query: link 
-Once I uploaded and created a table for each of the files, I combined them into one big dataset using SQL. The dataset contains data regarding each ride in 2023, consisting of 5,719,877 records. 
+**Data Combination**:
+SQL Query: [Combining Tables](https://github.com/kiankaas/bike-share-analysis/blob/main/01-Combine_tables.sql) 
+Once I uploaded and created a table for each of the files, I combined them into one big dataset using SQL. The dataset contains data regarding each ride in 2023, consisting of **5,719,877 records**. 
 
 **Data Exploration**: 
-SQL Query: Link
+SQL Query: [Data Exploration](https://github.com/kiankaas/bike-share-analysis/blob/main/02-data_exploration.sql)
 
 Next, I familiarize myself with the dataset so I can uncover any errors, inconsistencies, outliers, or missing values. After running some queries, I observed the following:
 
@@ -83,18 +85,18 @@ Next, I familiarize myself with the dataset so I can uncover any errors, inconsi
 8. **156,032 rows** contain outliers, which I determined by having a ride duration < 1 minute or > 24 hours long.
 
 **Data Cleaning and Transformation**:
-SQL Query: link
+SQL Query: [Data Cleaning](https://github.com/kiankaas/bike-share-analysis/blob/main/03-data_cleaning.sql)
 
-As 1,388,170 rows contained at least one NULL value, simply deleting all these rows from the dataset would reduce our total available data by **~24%**, which could significantly affect our results. As the other columns contain valuable data that can be used for analysis, such as **rideable_type** and **member_casual**, I decided to keep these rows and treat the null entries as N/A rather than deleting them. 
+As **1,388,170 rows** contained at least one NULL value, simply deleting all these rows from the dataset would reduce our total available data by **~24%**, which could significantly affect our results. As the other columns contain valuable data that can be used for analysis, such as **rideable_type** and **member_casual**, I decided to keep these rows and treat the null entries as N/A rather than deleting them. 
 
 To account for outliers I want to remove all trips with a duration of less than one minute and trips lasting more than 24 hours. Very short trips (under one minute) are likely due to user errors, such as unlocking and immediately relocking a bike, while trips over 24 hours likely involve operational activities, such as maintenance or relocation by Divvy. These outliers do not reflect typical user behavior and were removed to maintain the quality of the dataset. 
 
-Using the **started_at** and **ended_at** columns, in YYYY-MM-DD HH:mm:ss UTC format, I created a new column named ride_duration_minutes to display the total duration of each ride in minutes. I will also create new columns day_of_week, month, and hour to help with analysis later on. As we create the new dataset, we can drop the **ride_id**, **start_station_name**, **start_station_id**, **end_station_name**, **end_station_id**, **start_lat**, **start_lng**, **end_lat** and **end_lng** columns as they serve no value to our analysis and keep the dataset cleaner. With these changes, a total of 269,711 rows were deleted.
+Using the **started_at** and **ended_at** columns, in YYYY-MM-DD HH:mm:ss UTC format, I created a new column named **ride_duration_minutes** to display the total duration of each ride in minutes. I will also create new columns **day_of_week**, **month**, and **hour** to help with analysis later on. As we create the new dataset, we can drop the **ride_id**, **start_station_name**, **start_station_id**, **end_station_name**, **end_station_id**, **start_lat**, **start_lng**, **end_lat** and **end_lng** columns as they serve no value to our analysis and keep the dataset cleaner. With these changes, a total of **269,711 rows** were deleted.
 
-With that, our data is clean and ready to analyze. 
+With these changes, our data is clean and ready to analyze. The final cleaned dataset has **5,450,166 rows** and **8 columns**.
 
 ## Analyze:
-SQL Query: link
+SQL Query: [Data Analysis](https://github.com/kiankaas/bike-share-analysis/blob/main/04-data_analysis.sql)
 
 Analysis question: How do annual members and casual riders use Cyclistic bikes differently?  
 
